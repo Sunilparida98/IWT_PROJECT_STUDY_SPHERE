@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    
+   
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Cormorant+Garamond&family=Orbitron:wght@400..900&family=Playfair+Display&display=swap');
+        </style>
+    <link rel="stylesheet" href="Style.css">
+
+
+<style>
+   
+
+.scroll-container {
+            display: flex;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            margin-left: 40px;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            gap: 10px;
+            scroll-snap-type: x mandatory;
+        }
+        
+        /* Styling each scrollable item */
+        /* .scroll-item {
+            min-width: 200px;
+            height: 350px;
+            background-color: #3498db;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            scroll-snap-align: start;
+            border-radius: 8px;
+        } */
+
+        /* Button styling */
+        .next-btn {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .next-btn:hover {
+            background-color: #27ae60;
+        }
+    </style>
+
+
+
+
+
+    </style>
+      
+</head>
+<body>
+
+    <header>
+        <section class="navigation">
+            <div class="nav-container">
+              <div class="brand">
+        
+                <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+        
+                <!-- <i class="fa-thin fa-graduation-cap fa-2xl"></i> -->
+                <!-- <img src="img/Screenshot_2024-09-13_075725-removebg-preview.png" alt="noimage"> -->
+                <a href="#!">STUDY SPHERE</a>
+              </div>
+              <nav>
+                <div class="nav-mobile">
+                  <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                
+                <ul class="nav-list">
+                  <!-- Setting the links to #! will ensure that no action takes place on click. -->
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#!">My library</a></li>
+                  
+                  <li><a href="#!">About us</a></li>
+                  <li><a href="#!">Contact</a></li>
+                </ul>
+                </div>
+              </nav>
+            </div>
+          </section>
+
+
+    </header>
+
+    <main>
+
+      
+      
+      <div class="search_bar">
+
+        
+
+        
+        
+        <div class="search">
+            <input placeholder="Search..." type="text">
+            <button type="submit">Go</button>
+          </div>
+       </div>
+       
+       <div class="resume_reading">
+
+        
+     
+
+        <h2><ul>Resume Reading</ul></h2>
+       
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+
+              <div class="card">
+                <div class="card-image"></div>
+                <div class="category"> C++ </div>
+                <div class="heading"> A heading that must span over two lines
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+            </div>
+
+
+
+            </div>
+
+            <div class="col-md-4">
+
+              <div class="card">
+                <div class="card-image"></div>
+                <div class="category"> Java </div>
+                <div class="heading"> A heading that must span over two lines
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+            </div>
+
+
+
+            </div>
+
+            <div class="col-md-4">
+
+              <div class="card">
+                <div class="card-image"></div>
+                <div class="category"> Python </div>
+                <div class="heading"> A heading that must span over two lines
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+            </div>
+
+
+
+            </div>
+
+
+
+
+          </div>
+
+
+
+        </div>
+       </div>
+
+
+
+       <div class="Resent_view">
+
+        <h2>Resent View</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              
+              <div class="card">
+                <div class="top-card"><img src="img/folder.png"></div>
+                <div class="bottom-card">
+                  <div class="card-content">
+                    <span class="card-title">Advanse Java</span>
+                    <p class="card-txt">A simple card</p>
+                    <a href="#" class="card-btn">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+
+
+
+
+
+            </div>
+
+
+            <div class="col-md-4">
+              
+              <div class="card">
+                <div class="top-card"><img src="img/folder.png"></div>
+                <div class="bottom-card">
+                  <div class="card-content">
+                    <span class="card-title">Advanse Java</span>
+                    <p class="card-txt">A simple card</p>
+                    <a href="#" class="card-btn">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+
+
+
+
+
+            </div>
+
+                <div class="col-md-4">
+              
+              <div class="card">
+                <div class="top-card"><img src="img/folder.png"></div>
+                <div class="bottom-card">
+                  <div class="card-content">
+                    <span class="card-title">Advanse Java</span>
+                 
+                    <span class="card-title">Advanse Java</span>
+
+                    <!-- <p class="card-txt">A simple card</p> -->
+                    <a href="#" class="card-btn">Read More</a>
+                  </div>
+                </div>
+              </div>
+              
+
+
+
+
+
+            </div>
+
+
+
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+       </div>
+
+       <div class="metrial" style="padding-inline: 100px;">
+<!-- 
+        <div class="contain">
+          <div class="row">
+
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-image"></div>
+                <div class="category"> C++ </div>
+                <div class="heading"> A heading that must span over two lines
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+            </div>
+
+
+
+
+            </div>
+
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-image"></div>
+                <div class="category"> C++ </div>
+                <div class="heading"> A heading that must span over two lines
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+            </div>
+
+
+
+
+            </div>
+
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-image"></div>
+                <div class="category"> C++ </div>
+                <div class="heading"> A heading that must span over two lines
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+            </div>
+
+
+
+
+            </div>
+
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-image"></div>
+                <div class="category"> C++ </div>
+                <div class="heading"> A heading that must span over two lines
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+            </div>
+
+
+
+
+            </div>
+
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-image"></div>
+                <div class="category"> C++ </div>
+                <div class="heading"> A heading that must span over two lines
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+            </div>
+
+
+
+
+            </div>
+
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-image"></div>
+                <div class="category"> C++ </div>
+                <div class="heading"> A heading that must span over two lines
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+            </div>
+
+
+
+
+            </div>
+
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-image"></div>
+                <div class="category"> C++ </div>
+                <div class="heading"> A heading that must span over two lines
+                    <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+                </div>
+            </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+            
+
+
+
+          </div>
+
+
+        </div> -->
+
+
+        <div class="scroll-container" id="scrollContainer">
+          <div class="scroll-item">
+            <div class="card">
+              <div class="card-image"></div>
+              <div class="category"> C++ </div>
+              <div class="heading"> A heading that must span over two lines
+                  <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+              </div>
+          </div>
+          </div>
+          <div class="scroll-item">
+
+            <div class="card">
+              <div class="card-image"></div>
+              <div class="category"> C++ </div>
+              <div class="heading"> A heading that must span over two lines
+                  <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+              </div>
+          </div>
+
+          </div>
+          <div class="scroll-item">
+            <div class="card">
+              <div class="card-image"></div>
+              <div class="category"> C++ </div>
+              <div class="heading"> A heading that must span over two lines
+                  <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+              </div>
+          </div>
+
+          </div>
+          <div class="scroll-item">
+            <div class="card">
+              <div class="card-image"></div>
+              <div class="category"> C++ </div>
+              <div class="heading"> A heading that must span over two lines
+                  <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+              </div>
+          </div>
+
+          </div>
+
+          <div class="scroll-item">
+            <div class="card">
+              <div class="card-image"></div>
+              <div class="category"> C++ </div>
+              <div class="heading"> A heading that must span over two lines
+                  <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+              </div>
+          </div>
+
+          </div>
+
+          <div class="scroll-item">
+            <div class="card">
+              <div class="card-image"></div>
+              <div class="category"> C++ </div>
+              <div class="heading"> A heading that must span over two lines
+                  <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+              </div>
+          </div>
+
+          </div>
+
+          <div class="scroll-item">
+            <div class="card">
+              <div class="card-image"></div>
+              <div class="category"> C++ </div>
+              <div class="heading"> A heading that must span over two lines
+                  <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+              </div>
+          </div>
+
+          </div>
+          
+          <div class="scroll-item">  <div class="card">
+            <div class="card-image"></div>
+            <div class="category"> C++ </div>
+            <div class="heading"> A heading that must span over two lines
+                <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+            </div>
+        </div>
+      
+      </div>
+
+      </div>
+  
+
+
+
+
+       </div>
+
+    </main>
+
+    <footer>
+
+
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
